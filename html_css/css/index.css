@@ -1,0 +1,150 @@
+:root {
+    --main-green: #7A9972;
+    --stone: #E4E3D9;
+    --shadow: rgba(16, 44, 11, 0.20);
+    --default-background: #fdfdfd;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    background-color: var(--stone);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* DEFAULT CARD HEADER CSS */
+.card-header ul {
+    background-color: var(--main-green);
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    color: var(--default-background);
+}
+
+.card-header ul li {
+    display: inline;
+    padding: 0 1.5em;
+    font-weight: 500;
+}
+
+/* NAVBAR */
+.navbar-container {
+    background-color: var(--main-green);
+    box-shadow: 0 5px var(--shadow);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem 0;
+    top: 0;
+    position: sticky;
+}
+
+.navbar-container .nav-logo {
+    font-size: 3.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-list li {
+    display: inline-block;
+    font-size: 3.5em;
+    margin-right: 1rem;
+}
+
+.nav-list li a {
+    color: white;
+}
+
+.nav-list li a:hover {
+    transform: scale(2);
+    color: #D6747D;
+}
+
+/* NAVBAR - SEARCH */
+.navbar-container .nav-search {
+    margin-right: 1rem;
+}
+
+.navbar-container input[type="search"] {
+    padding: 12px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px 0 0 10px;
+}
+
+.navbar-container .nav-search button {
+    float: right;
+    padding: 11px 20px;
+    border-radius: 0 10px 10px 0; 
+    border: none;
+    background-color: var(--stone);
+    cursor: pointer;
+}
+
+.navbar-container .nav-search button:hover {
+    background-color: #c2c1a9;
+}
+
+/* NAVBAR - Mobile */
+@media (max-width: 768px) {
+    .navbar-container {
+        
+    }
+}
+
+/* POSTS */
+.post-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* POSTS - SINGLE */
+.post-container .post-single {
+    box-shadow: 2.5px 5px var(--shadow);
+    border-radius: 10px;
+    margin-top: 3rem;
+    margin-right: auto;
+}
+
+.post-container .post-single img {
+    width: 550px;
+    height: 750px;
+    float: left;
+    margin-right: 2em;
+}
+
+.post-container .post-single .post-header ul {
+    padding: 10px 0;
+}
+
+.post-container .post-single .post-header ul li {
+    font-size: 1.2em;
+}
+
+.post-container .post-body {
+    background-color: var(--default-background);
+    padding: 0.5em 1em 2em 1em;
+    border-radius: 0 0 10px 10px;
+    height: 80vh;
+}
